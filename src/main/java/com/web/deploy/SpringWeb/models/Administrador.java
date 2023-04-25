@@ -1,6 +1,6 @@
 package com.web.deploy.SpringWeb.models;
 
-import org.hibernate.annotations.Type;
+// import org.hibernate.annotations.Type;
 
 import jakarta.persistence.*;
 
@@ -59,7 +59,7 @@ public class Administrador {
   }
 
   public String getSenha() {
-    return senha;
+    return senha.substring(0, 3) + "****";
   }
 
   public void setSenha(String senha) {
