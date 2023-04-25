@@ -10,6 +10,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4" style="padding: 30px">
 
+                      <!-- <form method="POST"  enctype="multipart/form-data" action="/administradores/criar" onsubmit="return confirm('Confirma a ação ? ')"> -->
                       <form method="POST" action="/administradores/criar" onsubmit="return confirm('Confirma a ação ? ')">
                         <div class="mb-3">
                           <label for="nome" class="form-label">Nome: </label>
@@ -27,10 +28,9 @@
                           <label for="observacao" class="form-label">Observação: </label>
                           <textarea class="form-control" id="observacao"  name="observacao" placeholder="Digite uma obs"></textarea>
                         </div>
-                        
-                        <!-- <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <!-- <div class="mb-3">
+                            <label for="imagem" class="form-label">Foto Perfil: </label>
+                            <input type="file" id="imagem" name="imagem" />
                         </div> -->
                         <button type="submit" class="btn btn-primary">Enviar</button>
                       </form>

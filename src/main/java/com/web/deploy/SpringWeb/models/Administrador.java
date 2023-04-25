@@ -1,5 +1,7 @@
 package com.web.deploy.SpringWeb.models;
 
+// import javax.persistence.Lob;
+
 // import org.hibernate.annotations.Type;
 
 import jakarta.persistence.*;
@@ -25,6 +27,17 @@ public class Administrador {
   @Column(name = "observacao")
   // @Type(type = "string")
   private String observacao;
+
+  // @Lob
+  // private byte[] imagem;
+
+  // public void setImagem(byte[] imagem) {
+  // this.imagem = imagem;
+  // }
+
+  // public byte[] getImagem() {
+  // return imagem;
+  // }
 
   public String getObservacao() {
     return observacao;
