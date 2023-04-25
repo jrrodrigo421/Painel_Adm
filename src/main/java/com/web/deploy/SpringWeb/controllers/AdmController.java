@@ -46,6 +46,6 @@ public class AdmController {
   @GetMapping("/administradores/{id}/excluir")
   public String excluir(@PathVariable int id) {
     repo.deleteById(id);
-    return "redirect:/admnistradores";
+    return "redirect:/administradores";
   }
 }
